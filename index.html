@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="animation.css">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Slabo+27px" rel="stylesheet">
+
+</head>
+<body>
+
+    <section id="navContainer" class="container">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="index.html" class="active">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li id="logo"><a href="#"> <img src="imgs/ruler.png"></a></li>
+        </ul>
+    </section>
+    <section id="mainContent">
+
+        <div class="non-semantic-protector" class="godzilla">
+            <h1 class="ribbon">
+                <strong class="ribbon-content">Say Hello!</strong>
+            </h1>
+        </div>
+
+        <section id="formContainer" class="container">
+            <div class="centerForm"></div>
+
+            <div class="centerFormContent">
+            <form name="formName">
+                <div id="innerContent">
+                <img src="imgs/postage.png">
+                <h3>Hi, I'm:</h3>
+                    First name:
+                    <input type="text" name="firstname"><br><br>
+                    Last name:
+                    <input type="text" name="lastname"><br><br>
+
+                <h3>I'm looking for:</h3>
+                <select name="cars">
+                    <option value="newSite">A great new website</option>
+                    <option value="updateSite">A fresh update on my existing site</option>
+                    <option value="designHelp">Design help</option>
+                    <option value="other">Just to chat</option>
+                </select> <br><br>
+
+                <h3>You can reach me by:</h3>
+                Phone:
+                <input type="text" name="phone"> <input type="checkbox" name="phoneC" onclick="if(this.checked) {document.formName.emailC.checked=false;}"> Preferred<br><br>
+                Email:
+                <input type="text" name="email"> <input type="checkbox" name="emailC" onclick="if(this.checked) {document.formName.phoneC.checked=false;}"> Preferred  <br><br>
+
+                <h3>A bit about me:</h3>
+                    <p>Add anything you'd like, from the scope of your project to your favourite colour.</p>
+                <textarea rows=10 cols=30 name="message"></textarea> <br> <br>
+
+                <button type="button">Send!</button>
+                </div>
+            </form>
+            </div>
+                <div class="centerForm">
+                </div>
+        </section>
+    </section>
+    <section id="footerContainer" class="container">
+    <footer>
+        <a href="#">Privacy Policy</a>
+    </footer>
+    </section>
+</body>
+</html>
